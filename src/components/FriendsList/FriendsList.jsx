@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import FriendsListItem from 'components/FriendsListItem/FriendsListItem';
 import css from './FriendsList.module.css';
 
@@ -17,3 +18,14 @@ const FriendsList = ({ friends }) => {
 };
 
 export default FriendsList;
+
+FriendsList.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            avatar: PropTypes.string,
+            name: PropTypes.string,
+            isOnline: PropTypes.bool,
+            id: PropTypes.number,
+        })
+    ).isRequired,
+};

@@ -10,7 +10,7 @@ const Profile = ({
 
     return (
         <div className={css.profile}>
-            <div class={css.description}>
+            <div className={css.description}>
                 <img
                     src={avatar}
                     alt="User avatar"

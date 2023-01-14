@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+
+  padding-left: 30px;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.status {
+  display: block;
+
+  height: 15px;
+  width: 15px;
+
+  border-radius: 50%;
+}
+
+.avatar {
+  margin-left: 20px;
+
+  height: 48px;
+}
+
+.true {
+  background-color: green;
+}
+
+.false {
+  background-color: red;
+}
+
+.name {
+  margin-left: 20px;
+}
